@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CorsoIOT_1</string>
+    <string name="counter_value"></string>
+    <string name="et_content"></string>
+</resources>
