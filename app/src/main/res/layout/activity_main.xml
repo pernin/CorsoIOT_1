@@ -37,11 +37,20 @@
         android:id="@+id/button" />
 
     <Button
-        android:text="New Activity"
+        android:text="Open Sensors Activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/button"
         android:layout_alignParentStart="true"
         android:layout_marginTop="30dp"
         android:id="@+id/button2" />
+
+    <Button
+        android:text="Open BT Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/button3" />
 </RelativeLayout>

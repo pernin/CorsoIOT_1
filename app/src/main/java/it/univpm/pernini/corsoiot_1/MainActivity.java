@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView myTextView;
 
     Button newActivityButton;
+    Button btActivityButton;
 
     String STATUS_TEXT="status_text";
     String myText;
@@ -61,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btActivityButton=(Button)findViewById(R.id.button3);
+        btActivityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this, BTActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -155,12 +164,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     void showToast(String texttoshow) {
-        Context context = getApplicationContext();
-        CharSequence text = texttoshow;
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+//        Context context = getApplicationContext();
+//        CharSequence text = texttoshow;
+//        int duration = Toast.LENGTH_SHORT;
+//
+//        Toast toast = Toast.makeText(context, text, duration);
+//        toast.show();
     }
 
 }
